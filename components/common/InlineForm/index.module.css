@@ -1,0 +1,24 @@
+.inlineForm {
+  margin-bottom: 30px;
+}
+.inlineForm input {
+  padding: 6px 13px;
+  flex-grow: 1;
+  border: none;
+  background-color: var(--white);
+  font-size: var(--text-size);
+  font-weight: var(--weight-secondary);
+  border-radius: 4px;
+  outline: none;
+}
+.inlineForm button {
+  background-color: #ffd476;
+  font-size: var(--text-size);
+  font-weight: var(--weight-secondary);
+  padding: 6px 13px;
+  max-width: 170px;
+  min-width: 100px;
+  border-radius: 4px;
+  border: none;
+  text-transform: capitalize;
+}/*# sourceMappingURL=index.module.css.map */

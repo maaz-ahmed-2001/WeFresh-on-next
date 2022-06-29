@@ -1,0 +1,16 @@
+.download p {
+  color: var(--white);
+  font-size: var(--text-size);
+  font-weight: var(--weight-secondary);
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .download {
+    margin-bottom: 7rem !important;
+  }
+  .download p {
+    text-align: center;
+  }
+}/*# sourceMappingURL=index.module.css.map */

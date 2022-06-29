@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --text-primary: #868e95;
+  --text-secondary: #68bae3;
+  --text-black: #14243c;
+  --heading-primary: 42px;
+  --heading-secondary: 22px;
+  --weight-secondary: 400;
+  --border-primary: #e8e8e8;
+  --white: #fff;
+  --border: 1px solid var(--border-primary);
+  --text-size: 16px;
+  --bg-primary: #f2f9ff;
+  --bold: 600;
+}

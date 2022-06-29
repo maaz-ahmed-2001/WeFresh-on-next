@@ -10,14 +10,14 @@ type LinkProps = {
 };
 const Header = (props: LinkProps) => {
   return (
-    <header className="bg-red-100 w-full px-20">
-      <nav className="flex justify-between items-center w-full">
+    <header className="bg-transparent w-full absolute top-0">
+      <nav className="flex justify-between items-center w-full container mx-auto">
         <div className="">
           <Image src={logo} alt="WeFresh" />
         </div>
-        <ul className="w-100 flex items-center justify-end list-none gap-4">
+        <ul className="w-100 flex items-center justify-end list-none gap-12">
           {props.links.map((link, index: number) => (
-            <li className="py-6" key={index}>
+            <li className="py-8" key={index}>
               <Link href={link.link}>{link.name}</Link>
             </li>
           ))}
