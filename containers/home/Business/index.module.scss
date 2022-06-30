@@ -1,0 +1,33 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h2 {
+    color: var(--text-secondary);
+    line-height: 70px;
+    font-size: var(--heading-primary);
+    width: fit-content;
+  }
+  p {
+    max-width: 540px;
+    margin-bottom: 40px;
+    margin-top: 4px;
+    text-align: center;
+  }
+  > div {
+    justify-content: center;
+    margin-bottom: 0 !important;
+    input {
+      border: var(--border);
+    }
+  }
+}
+
+@media screen and (max-width: 639px) {
+  .content {
+    h2 {
+      font-size: var(--heading-secondary);
+    }
+  }
+}

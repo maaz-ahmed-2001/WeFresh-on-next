@@ -9,11 +9,7 @@ type formProps = {
 };
 const InlineForm = (props: formProps) => {
   return (
-    <div
-      className={
-        "flex justify-start items-center md:gap-5 sm:gap-3 " + styles.inlineForm
-      }
-    >
+    <div className={styles.inlineForm}>
       <input type={props.form.type} placeholder={props.form.placeholder} />
       <button>{props.form.text}</button>
     </div>

@@ -1,0 +1,13 @@
+.footerLinks h4 {
+  color: var(--text-black);
+  font-size: var(--text-size);
+  text-transform: uppercase;
+  font-weight: var(--bold);
+  margin-bottom: 15px;
+}
+.footerLinks ul li {
+  color: var(--text-primary);
+  font-size: var(--text-size);
+  font-weight: var(--weight-secondary);
+  margin-bottom: 5px;
+}/*# sourceMappingURL=index.module.css.map */

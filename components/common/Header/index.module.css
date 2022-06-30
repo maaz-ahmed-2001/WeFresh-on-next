@@ -1,0 +1,77 @@
+.headerBtn {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: red;
+}
+.headerBtn img {
+  width: 30px;
+  height: 30px;
+}
+
+.blue {
+  background-color: #68bae3;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s all;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  overflow: hidden;
+  gap: 40px;
+}
+
+.signUpBtn {
+  background-color: #ffd476;
+  color: var(--text-black);
+  padding: 6px 13px;
+  border-radius: 4px;
+  width: 100%;
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .navbar ul {
+    position: absolute;
+    top: 60px;
+    flex-direction: column;
+    width: 100%;
+    gap: 0;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 0;
+  }
+  .navbar ul li {
+    width: 100%;
+    padding: 10px 0 14px;
+    border-top: var(--border);
+    color: var(--white);
+  }
+  .navbar ul li:nth-child(4) {
+    margin-bottom: 37px !important;
+    border-bottom: var(--border) !important;
+  }
+  .navbar ul li:last-child {
+    padding: 0;
+    border: none;
+  }
+  .navbar ul .signUpBtn {
+    display: block;
+  }
+
+  .show {
+    height: 400px !important;
+    transition: 0.3s all;
+  }
+
+  .hidden {
+    height: 0px !important;
+    transition: 0.3s all;
+  }
+}/*# sourceMappingURL=index.module.css.map */

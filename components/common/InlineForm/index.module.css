@@ -1,5 +1,8 @@
 .inlineForm {
   margin-bottom: 30px;
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
 }
 .inlineForm input {
   padding: 6px 13px;
@@ -10,6 +13,8 @@
   font-weight: var(--weight-secondary);
   border-radius: 4px;
   outline: none;
+  min-width: 100px;
+  max-width: 300px;
 }
 .inlineForm button {
   background-color: #ffd476;

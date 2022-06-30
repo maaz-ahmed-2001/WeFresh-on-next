@@ -1,15 +1,15 @@
 import Image from "next/image";
-import phone from "../../assests/images/phone.svg";
-import DownloadApp from "../common/DownloadApp";
-import InlineForm from "../common/InlineForm";
+import phone from "../../../assests/images/phone.svg";
+import DownloadApp from "../../../components/common/DownloadApp";
+import InlineForm from "../../../components/common/InlineForm";
 import styles from "./index.module.css";
-import appleIconDark from "../../assests/images/Apple.svg";
-import playStoreIconLight from "../../assests/images/Googleplay.svg";
-import bannerImg1 from "../../assests/images/bannerImg1.svg";
-import bannerImg2 from "../../assests/images/bannerImg2.svg";
-import bannerImg3 from "../../assests/images/bannerImg3.svg";
-import bannerImg4 from "../../assests/images/bannerImg4.svg";
-import bannerImg5 from "../../assests/images/bannerImg5.svg";
+import appleIconDark from "../../../assests/images/Apple.svg";
+import playStoreIconLight from "../../../assests/images/Googleplay.svg";
+import bannerImg1 from "../../../assests/images/bannerImg1.svg";
+import bannerImg2 from "../../../assests/images/bannerImg2.svg";
+import bannerImg3 from "../../../assests/images/bannerImg3.svg";
+import bannerImg4 from "../../../assests/images/bannerImg4.svg";
+import bannerImg5 from "../../../assests/images/bannerImg5.svg";
 
 const BannerSection = () => {
   const form = {
@@ -36,13 +36,9 @@ const BannerSection = () => {
   };
   return (
     <section className={styles.section}>
-      <div className="container mx-auto">
-        <div className="grid md:grid-cols-2 grid-flow-row items-center">
-          <div
-            className={
-              "flex-col sm:items-center md:items-start " + styles.leftSide
-            }
-          >
+      <div className="container mx-auto xs:px-4 sm:px-4 md:px-10">
+        <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 ">
+          <div className={" " + styles.leftSide}>
             <h1 className={styles.bannerHeading}>
               {heading.normal}
               <br />
@@ -57,11 +53,13 @@ const BannerSection = () => {
               styles.rightSide
             }
           >
-            <Image src={phone} alt="phone" className={styles.bannerImg} />
+            <div className={styles.bannerImg}>
+              <Image src={phone} alt="phone" />
+            </div>
           </div>
         </div>
       </div>
-      <div className="absolute top-0 max-w-full -z-10">
+      <div className={"absolute top-0 max-w-full -z-10 " + styles.bannerImg1}>
         <Image src={bannerImg1} alt="bannerBgImg1" />
       </div>
       <div

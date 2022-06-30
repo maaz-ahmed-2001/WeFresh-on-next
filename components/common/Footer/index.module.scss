@@ -1,0 +1,22 @@
+.footer {
+  background-color: var(--bg-primary);
+}
+
+.bottomBar {
+  border-top: var(--border);
+  padding-top: 24px;
+  padding-bottom: 20px;
+  p {
+    color: var(--text-primary);
+    font-size: var(--text-size);
+    font-weight: var(--weight-secondary);
+  }
+}
+.getApp {
+  p {
+    text-align: center;
+    color: var(--text-primary) !important;
+    font-size: var(--text-size);
+    font-weight: var(--weight-secondary);
+  }
+}

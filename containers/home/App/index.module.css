@@ -1,0 +1,38 @@
+.section {
+  background-color: var(--bg-primary);
+}
+.section div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.section div div h2 {
+  text-align: center;
+  margin-bottom: 4px;
+}
+.section div p {
+  max-width: 540px;
+  text-align: center;
+  margin-bottom: 35px;
+}
+.section div div {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 17px;
+}
+.section div div img {
+  max-width: 100%;
+}
+
+@media screen and (max-width: 639px) {
+  .section div div h2 {
+    margin-bottom: 27px;
+  }
+  .section div div {
+    flex-direction: column;
+    align-items: center;
+  }
+}/*# sourceMappingURL=index.module.css.map */
