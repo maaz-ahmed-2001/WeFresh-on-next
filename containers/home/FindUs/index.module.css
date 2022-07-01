@@ -1,46 +1,41 @@
-.content {
-  .form {
-    width: 100%;
-    div input {
-      border: var(--border);
-    }
-  }
-  .img > span {
-    width: 100%;
-  }
+.content .form {
+  width: 100%;
 }
+.content .form div input {
+  border: var(--border);
+}
+.content .img > span {
+  width: 100%;
+}
+
 .bg1 {
   position: absolute;
   right: 0%;
   bottom: 0;
   z-index: -9;
-
   max-height: 100%;
 }
-.bg1 > * {
-}
+
 .bg2 {
   position: absolute;
   left: -10%;
   top: 100%;
   z-index: -9;
   transform: translate(0%, -50%);
-
   max-height: 100%;
 }
+
 .bg2 > * {
   max-width: 100%;
 }
 
 @media screen and (max-width: 767px) {
-  .content {
-    .form > div {
-      justify-content: center;
-    }
+  .content .form > div {
+    justify-content: center;
   }
 }
 @media screen and (max-width: 991px) {
   .bg2 {
     transform: translate(-20%, -10%);
   }
-}
+}/*# sourceMappingURL=index.module.css.map */

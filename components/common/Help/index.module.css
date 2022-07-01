@@ -1,0 +1,17 @@
+.helpBox > div {
+  border-radius: 10px;
+  border: var(--border);
+  padding: 39px 32px;
+  min-height: 200px;
+}
+.helpBox > div p {
+  font-size: var(--text-size);
+}
+.helpBox > div h4 {
+  font-size: var(--heading-secondary);
+  color: var(--black);
+}
+
+.helpBox {
+  width: 100%;
+}/*# sourceMappingURL=index.module.css.map */

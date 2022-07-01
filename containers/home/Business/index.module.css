@@ -21,6 +21,7 @@
 .content > div {
   justify-content: center;
   margin-bottom: 0 !important;
+  max-width: 100%;
 }
 .content > div input {
   border: var(--border);

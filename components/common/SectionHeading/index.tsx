@@ -1,7 +1,7 @@
 import styles from "./index.module.css";
 type headingProps = {
   normal: string;
-  bold: string;
+  bold?: string;
 };
 const SectionHeading = ({ normal, bold }: headingProps) => {
   return (

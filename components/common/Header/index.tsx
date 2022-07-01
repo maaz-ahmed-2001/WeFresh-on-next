@@ -58,7 +58,7 @@ const Header = (props: LinkProps) => {
             </li>
           </ul>
           <button
-            className={"md:flex lg:hidden 2xl:hidden " + styles.headerBtn}
+            className={"md:flex lg:hidden 3xl:hidden " + styles.headerBtn}
             onClick={handleClick}
           >
             <Image src={show ? close : menuBtn} alt="collapse-btn" />
