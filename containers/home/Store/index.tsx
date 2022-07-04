@@ -1,82 +1,63 @@
-import React from "react";
-import styles from "./index.module.css";
 import store from "../../../assests/images/services1.svg";
-const Tabs = ({ color }) => {
-  const [openTab, setOpenTab] = React.useState(1);
+import grocery from "../../../assests/images/services2.svg";
+import cafe from "../../../assests/images/services3.svg";
+import food from "../../../assests/images/services4.svg";
+import SectionHeading from "../../../components/common/SectionHeading";
+import StoreContent from "../../../components/common/StoreContent";
+import ServicesSlider from "../../../components/ServicesSlider";
+import StoreDetails from "../../../components/StoreDetails";
+import StoreNavBtn from "../../../components/StoreNavBtn";
+import styles from "./index.module.css";
+export default function StoreSection() {
+  const pageContent = {
+    heading: {
+      normal: "We've more",
+      bold: "services",
+    },
+    imgContent: [
+      {
+        src: store,
+        alt: "store-service",
+        title: "Store",
+      },
+      {
+        src: grocery,
+        alt: "grocery-service",
+        title: "Grocery",
+      },
+      {
+        src: cafe,
+        alt: "cafe-service",
+        title: "Cafe",
+      },
+      {
+        src: food,
+        alt: "food-service",
+        title: "Food",
+      },
+    ],
+  };
   return (
-    <>
-      <div className="flex flex-wrap">
-        <div className="w-full">
-          <ul
-            className="flex mb-0 list-none flex-wrap pt-3 pb-4 flex-row"
-            role="tablist"
-          >
-            <li className="-mb-px mr-2 last:mr-0 flex-auto text-center">
-              <a
-                className={
-                  "text-xs font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal " +
-                  (openTab === 1
-                    ? "text-white bg-" + color + "-600"
-                    : "text-" + color + "-600 bg-white")
-                }
-                onClick={(e) => {
-                  e.preventDefault();
-                  setOpenTab(1);
-                }}
-                data-toggle="tab"
-                href="#link1"
-                role="tablist"
-              >
-                Profile
-              </a>
-            </li>
-            <li className="-mb-px mr-2 last:mr-0 flex-auto text-center">
-              <a
-                className={
-                  "text-xs font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal " +
-                  (openTab === 2
-                    ? "text-white bg-" + color + "-600"
-                    : "text-" + color + "-600 bg-white")
-                }
-                onClick={(e) => {
-                  e.preventDefault();
-                  setOpenTab(2);
-                }}
-                data-toggle="tab"
-                href="#l"
-                role="tablist"
-              >
-                Settings
-              </a>
-            </li>
-            <li className="-mb-px mr-2 last:mr-0 flex-auto text-center">
-              <a
-                className={
-                  "text-xs font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal " +
-                  (openTab === 3 ? styles.active : styles.normal)
-                }
-                onClick={(e) => {
-                  e.preventDefault();
-                  setOpenTab(3);
-                }}
-                data-toggle="tab"
-                href="#link3"
-                role="tablist"
-              >
-                Options
-              </a>
-            </li>
-          </ul>
+    <section className="py-24 md:pb-0">
+      <div className="container xs:px-3 sm:px-5 md:px-8 lg:px-20 xl:px-32 2xl:px-36 3xl:px-44">
+        <div className={styles.content}>
+          <div className={styles.heading}>
+            <SectionHeading
+              normal={pageContent.heading.normal}
+              bold={pageContent.heading.bold}
+            />
+          </div>
+          <div className={styles.storeBtns + "block md:hidden"}>
+            <StoreNavBtn imgContent={pageContent.imgContent} />
+          </div>
+          <div className="hidden md:block">
+            <ServicesSlider imgContent={pageContent.imgContent} />
+          </div>
+          <div className={styles.storeDetails + " mt-36 md:mt-28"}>
+            <StoreDetails />
+          </div>
         </div>
       </div>
-    </>
-  );
-};
-
-export default function StoreSection() {
-  return (
-    <>
-      <Tabs color="#565" />;
-    </>
+    </section>
   );
 }

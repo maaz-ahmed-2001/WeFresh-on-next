@@ -1,0 +1,21 @@
+.active {
+  transform: scale(1.2);
+}
+.active p {
+  color: var(--text-secondary) !important;
+}
+
+.btnContainer li div {
+  transition: 0.3s all;
+  cursor: pointer;
+}
+.btnContainer li div img {
+  height: 120px !important;
+  width: 120px !important;
+}
+.btnContainer li div p {
+  font-size: var(--heading-secondary);
+  font-weight: var(--weight-secondary);
+  color: var(--text-primary);
+  margin-top: 17px;
+}/*# sourceMappingURL=index.module.css.map */

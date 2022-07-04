@@ -35,21 +35,28 @@ const BannerSection = () => {
     ],
   };
   return (
-    <section className={styles.section}>
-      <div className="container mx-auto xs:px-4 sm:px-4 md:px-10">
-        <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 ">
-          <div className={" " + styles.leftSide}>
+    <section className={"py-24 " + styles.section}>
+      <div className="container xs:px-3 sm:px-5 md:px-8 lg:px-20 xl:px-32 2xl:px-36 3xl:px-44">
+        <div className="grid md:grid-cols-1 grid-cols-12 gap-4 ">
+          <div
+            className={
+              "col-span-7 flex flex-col md:items-center md:col-span-1 justify-center" +
+              styles.leftSide
+            }
+          >
             <h1 className={styles.bannerHeading}>
               {heading.normal}
               <br />
               <b className="">{heading.bold}</b>
             </h1>
-            <InlineForm form={form} />
+            <div className={styles.bannerForm}>
+              <InlineForm form={form} />
+            </div>
             <DownloadApp download={appContent} />
           </div>
           <div
             className={
-              "flex xs:justify-center sm:justify-center md:justify-center lg:justify-end " +
+              "flex flex-row items-center justify-end md:col-span-1 md:justify-center col-span-5 " +
               styles.rightSide
             }
           >

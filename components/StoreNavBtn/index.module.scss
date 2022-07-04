@@ -1,0 +1,23 @@
+.active {
+  transform: scale(1.2);
+  p {
+    color: var(--text-secondary) !important;
+  }
+}
+
+.btnContainer {
+  li div {
+    transition: 0.3s all;
+    cursor: pointer;
+    img {
+      height: 120px !important;
+      width: 120px !important;
+    }
+    p {
+      font-size: var(--heading-secondary);
+      font-weight: var(--weight-secondary);
+      color: var(--text-primary);
+      margin-top: 17px;
+    }
+  }
+}

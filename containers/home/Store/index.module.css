@@ -1,9 +1,4 @@
-.active {
-  background-color: red;
-  color: blue;
-}
-
-.normal {
-  background-color: blue;
-  color: red;
+.content .heading div {
+  text-align: center;
+  margin-bottom: 80px;
 }/*# sourceMappingURL=index.module.css.map */

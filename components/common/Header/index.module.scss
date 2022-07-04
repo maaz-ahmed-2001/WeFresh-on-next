@@ -21,6 +21,9 @@
   height: fit-content;
   overflow: hidden;
   gap: 40px;
+  li:last-child {
+    display: none;
+  }
 }
 
 .signUpBtn {
@@ -56,6 +59,7 @@
     li:last-child {
       padding: 0;
       border: none;
+      display: block;
     }
     .signUpBtn {
       display: block;

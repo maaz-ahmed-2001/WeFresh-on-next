@@ -15,6 +15,9 @@
     font-weight: var(--bold);
   }
 }
+.bannerForm {
+  width: 100%;
+}
 .bannerImg1 {
   width: fit-content;
   img {
@@ -31,24 +34,13 @@
   max-width: 100%;
 }
 
-@media screen and (max-width: 639px) {
-  .section {
-    padding: 2rem 0;
-  }
-  .bannerHeading {
-    font-size: var(--heading-secondary);
-    margin: 0 auto;
-    line-height: 33px;
-    text-align: center;
-    margin-bottom: 23px;
-  }
-  .leftSide {
-    align-items: center;
-    div:last-child {
-      margin: 0 auto;
+@media screen and (max-width: 767px) {
+  .bannerForm {
+    div {
+      justify-content: center;
     }
   }
-  .rightSide {
-    justify-content: center;
+  .bannerHeading {
+    text-align: center;
   }
 }

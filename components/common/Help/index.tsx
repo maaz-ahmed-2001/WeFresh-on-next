@@ -10,8 +10,8 @@ const Help = (props: help) => {
     <div className={"grid grid-cols-2 md:grid-cols-1 gap-5 " + styles.helpBox}>
       {props.support.map((item, index) => (
         <div className="flex flex-col items-center justify-end" key={index}>
-          <h4>{item.title}</h4>
-          <p>{item.content}</p>
+          <h4 className="text-center">{item.title}</h4>
+          <p className="text-center">{item.content}</p>
         </div>
       ))}
     </div>

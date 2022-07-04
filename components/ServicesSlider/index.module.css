@@ -1,0 +1,18 @@
+.slideCon .content {
+  border-radius: 10px;
+  box-shadow: 0px 20px 30px rgba(221, 233, 243, 0.75);
+  padding: 33px 33px 28px;
+}
+.slideCon .content div span img {
+  width: 120px !important;
+  height: 120px !important;
+}
+.slideCon .content p {
+  color: var(--text-primary);
+  font-size: var(--heading-secondary);
+  font-weight: var(--weight-secondary);
+  line-height: 30px;
+  margin-top: 15px;
+  text-align: center;
+  text-transform: capitalize;
+}/*# sourceMappingURL=index.module.css.map */

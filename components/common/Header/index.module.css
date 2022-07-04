@@ -26,6 +26,9 @@
   overflow: hidden;
   gap: 40px;
 }
+.navbar ul li:last-child {
+  display: none;
+}
 
 .signUpBtn {
   background-color: #ffd476;
@@ -60,6 +63,7 @@
   .navbar ul li:last-child {
     padding: 0;
     border: none;
+    display: block;
   }
   .navbar ul .signUpBtn {
     display: block;
