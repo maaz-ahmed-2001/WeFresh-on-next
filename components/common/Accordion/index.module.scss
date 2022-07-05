@@ -1,8 +1,9 @@
 .accCon {
-  margin-bottom: 100px;
+  margin-bottom: 100px !important;
 }
 
 .accordion {
+  margin-bottom: 12px;
   button {
     background: var(--white);
     padding: 20px 41px;
@@ -15,13 +16,12 @@
   }
   .accBody {
     background: var(--white);
-
+    margin-bottom: 2px !important;
     border: var(--border);
     border-color: var(--text-secondary);
     margin-top: 12px;
-    // margin-bottom: 12px;
     border-radius: 10px;
-    padding: 20px 41px 28px;
+    padding: 20px 41px 20px;
     h3 {
       font-size: var(--heading-secondary);
       color: var(--text-secondary);
@@ -36,7 +36,7 @@
 
 @media screen and (max-width: 639px) {
   .accCon {
-    gap: 0;
+    margin-bottom: 100px !important;
   }
   .accordion {
     button {

@@ -18,15 +18,19 @@ const ServicesSlider = (props: sliderProps) => {
   const handleChange = (index: number) => {
     if (index === 0) {
       dispatch(store());
+      console.log("a");
     }
     if (index === 1) {
       dispatch(grocery());
+      console.log("b");
     }
     if (index === 2) {
       dispatch(cafe());
+      console.log("c");
     }
     if (index === 3) {
       dispatch(food());
+      console.log("d");
     }
   };
   return (

@@ -12,8 +12,7 @@ type btnProps = {
   }[];
 };
 const StoreNavBtn = (props: btnProps) => {
-  const [openTab, setOpenTab] = useState(1);
-  const [index, setIndex] = useState(0);
+  const [openTab, setOpenTab] = useState(2);
   const dispatch = useDispatch();
   const handleClick = (index: number) => {
     setOpenTab(index + 1);

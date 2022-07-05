@@ -35,7 +35,7 @@ const BannerSection = () => {
     ],
   };
   return (
-    <section className={"py-28 " + styles.section}>
+    <section className={"py-36 " + styles.section}>
       <div className="container xs:px-4 sm:px-5 md:px-8 lg:px-14 xl:px-24 2xl:px-36 3xl:px-72">
         <div className="grid md:grid-cols-1 grid-cols-12 gap-4 ">
           <div

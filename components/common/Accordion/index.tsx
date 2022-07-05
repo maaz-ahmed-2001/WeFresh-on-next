@@ -19,7 +19,7 @@ const AccordionComponent = (props: accProps) => {
   };
 
   return (
-    <div className={"flex flex-col w-full mb-3 md:mb-0 gap-3 " + styles.accCon}>
+    <div className={"flex flex-col w-full" + styles.accCon}>
       {props.questions.map(({ question, title, body }, index) => (
         <Accordion
           className={styles.accordion}

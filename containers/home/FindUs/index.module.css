@@ -44,7 +44,7 @@
 
   .bg1 {
     top: 50%;
-    transform: translateY(-25%);
+    transform: translateY(-35%);
   }
 
   .bg2 {
@@ -53,6 +53,10 @@
   }
 }
 @media screen and (max-width: 575px) {
+  .bg1 {
+    transform: translate(20%, -35%);
+  }
+
   .bg2 {
     max-width: 300px;
     top: 100%;
