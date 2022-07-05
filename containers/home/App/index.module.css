@@ -11,10 +11,11 @@
   text-align: center;
   margin-bottom: 4px;
 }
-.section div p {
+.section div .text {
   max-width: 540px;
   text-align: center;
   margin-bottom: 35px;
+  color: var(--text-primary);
 }
 .section div div {
   display: flex;

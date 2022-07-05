@@ -38,8 +38,8 @@ export default function StoreSection() {
     ],
   };
   return (
-    <section className="py-24 md:pb-0">
-      <div className="container xs:px-3 sm:px-5 md:px-8 lg:px-20 xl:px-32 2xl:px-36 3xl:px-44">
+    <section className="py-24 md:pb-0 md:pt-0">
+      <div className="container xs:px-4 sm:px-5 md:px-8 lg:px-14 xl:px-24 2xl:px-36 3xl:px-72">
         <div className={styles.content}>
           <div className={styles.heading}>
             <SectionHeading

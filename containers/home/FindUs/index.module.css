@@ -4,38 +4,58 @@
 .content .form div input {
   border: var(--border);
 }
-.content .img > span {
+.content .img {
   width: 100%;
+}
+.content .img * {
+  width: 100% !important;
 }
 
 .bg1 {
   position: absolute;
   right: 0%;
-  bottom: 0;
+  top: 0;
   z-index: -9;
-  max-height: 100%;
+  display: flex;
 }
 
 .bg2 {
   position: absolute;
-  left: -10%;
-  top: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-10%, -30%);
+  display: flex;
   z-index: -9;
-  transform: translate(0%, -50%);
-  max-height: 100%;
 }
 
-.bg2 > * {
-  max-width: 100%;
-}
+@media screen and (max-width: 991px) {
+  .bg1 {
+    transform: translateX(30%);
+  }
 
+  .bg2 {
+    transform: translate(-5%, -30%);
+  }
+}
 @media screen and (max-width: 767px) {
   .content .form > div {
     justify-content: center;
   }
-}
-@media screen and (max-width: 991px) {
+
+  .bg1 {
+    top: 50%;
+    transform: translateY(-25%);
+  }
+
   .bg2 {
-    transform: translate(-20%, -10%);
+    left: 0;
+    transform: translateY(20%);
+  }
+}
+@media screen and (max-width: 575px) {
+  .bg2 {
+    max-width: 300px;
+    top: 100%;
+    transform: translateY(-150%);
   }
 }/*# sourceMappingURL=index.module.css.map */

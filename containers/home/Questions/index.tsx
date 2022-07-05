@@ -54,7 +54,7 @@ const QuestionsSection = () => {
   };
   return (
     <section className="py-24 md:pb-20">
-      <div className="container sm:px-0 md:px-10 lg:px-20 xl:px-32 2xl:px-36 3xl:px-44">
+      <div className="container sm:px-0 md:px-8 lg:px-14 xl:px-24 2xl:px-36 3xl:px-72">
         <div className={"flex flex-col items-center " + styles.firstContent}>
           <SectionHeading normal={pageContent.first_title} />
           <p className="text-center mt-3 mb-11">

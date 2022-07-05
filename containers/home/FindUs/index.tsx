@@ -31,14 +31,16 @@ const FindUsSection = () => {
     },
   };
   return (
-    <section className={"py-36 md:pb-28 relative"}>
+    <section className={"py-48 md:pt-24 relative overflow-hidden"}>
       <div className={styles.bg1}>
         <Image src={pageContent.bg_1.src} alt={pageContent.bg_1.alt} />
       </div>
-
+      <div className={styles.bg2}>
+        <Image src={pageContent.bg_2.src} alt={pageContent.bg_2.alt} />
+      </div>
       <div
         className={
-          "container xs:px-2 sm:px-5 md:px-10 lg:px-16 xl:px-32 2xl:px-36 3xl:px-44 "
+          "container xs:px-4 sm:px-5 md:px-8 lg:px-14 xl:px-24 2xl:px-36 3xl:px-72 "
         }
       >
         <div className="grid md:grid-cols-1 grid-cols-2 gap-4">
@@ -56,11 +58,12 @@ const FindUsSection = () => {
               <InlineForm form={pageContent.form} />
             </div>
           </div>
-          <div className={"max-w-full relative " + styles.img}>
+          <div
+            className={
+              "max-w-full relative flex flex-col justify-end " + styles.img
+            }
+          >
             <Image src={pageContent.image.src} alt={pageContent.image.alt} />
-            <div className={styles.bg2}>
-              <Image src={pageContent.bg_2.src} alt={pageContent.bg_2.alt} />
-            </div>
           </div>
         </div>
       </div>

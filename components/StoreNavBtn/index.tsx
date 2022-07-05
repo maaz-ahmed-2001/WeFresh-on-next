@@ -40,23 +40,20 @@ const StoreNavBtn = (props: btnProps) => {
         <div className="w-full mb-0">
           <ul
             className={
-              "flex list-none flex-row justify-between items-start " +
+              "flex list-none flex-row lg:justify-between justify-evenly items-start " +
               styles.btnContainer
             }
-            role="tablist"
           >
             {props.imgContent.map(({ src, alt, title }, index) => (
               <li key={index} className="flex-row justify-center items-start">
                 <div
                   className={
-                    "text-xs font-bold capitalize block text-center flex-col justify-start items-center " +
+                    "text-xs capitalize block text-center flex-col justify-start items-center " +
                     (openTab === index + 1 ? styles.active : styles.normal)
                   }
                   onClick={() => {
                     handleClick(index);
                   }}
-                  data-toggle="tab"
-                  role="tablist"
                 >
                   <Image src={src} alt={alt} />
                   <p>{title}</p>

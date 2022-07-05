@@ -35,12 +35,12 @@ const BannerSection = () => {
     ],
   };
   return (
-    <section className={"py-24 " + styles.section}>
-      <div className="container xs:px-3 sm:px-5 md:px-8 lg:px-20 xl:px-32 2xl:px-36 3xl:px-44">
+    <section className={"py-28 " + styles.section}>
+      <div className="container xs:px-4 sm:px-5 md:px-8 lg:px-14 xl:px-24 2xl:px-36 3xl:px-72">
         <div className="grid md:grid-cols-1 grid-cols-12 gap-4 ">
           <div
             className={
-              "col-span-7 flex flex-col md:items-center md:col-span-1 justify-center" +
+              "col-span-7 flex flex-col md:items-center md:col-span-1 justify-center relative " +
               styles.leftSide
             }
           >
@@ -53,42 +53,36 @@ const BannerSection = () => {
               <InlineForm form={form} />
             </div>
             <DownloadApp download={appContent} />
+            <div className={styles.bannerImg3}>
+              <Image src={bannerImg3} alt="bannerBgImg3" />
+            </div>
           </div>
           <div
             className={
-              "flex flex-row items-center justify-end md:col-span-1 md:justify-center col-span-5 " +
+              "flex flex-row items-center justify-center md:col-span-1 col-span-5 relative " +
               styles.rightSide
             }
           >
+            <div className={styles.bgYellow}>
+              <Image src={bannerImg4} alt="bg-yellow" />
+            </div>
             <div className={styles.bannerImg}>
               <Image src={phone} alt="phone" />
             </div>
           </div>
         </div>
       </div>
-      <div className={"absolute top-0 max-w-full -z-10 " + styles.bannerImg1}>
+
+      <div className={styles.bannerImg1}>
         <Image src={bannerImg1} alt="bannerBgImg1" />
       </div>
-      <div
-        className={
-          "absolute max-w-full -z-10 top-0 right-0 " + styles.bannerImg2
-        }
-      >
+      <div className={styles.bannerImg2}>
         <Image src={bannerImg2} alt="bannerBgImg2" />
       </div>
-      {/* <div className="absolute top-0 max-w-full -z-10">
-        <Image src={bannerImg3} alt="bannerBgImg3" />
-      </div>
-      <div className="absolute top-0 max-w-full -z-10">
-        <Image src={bannerImg4} alt="bannerBgImg4" />
-      </div>
-      <div
-        className={
-          "absolute top-0 right-0 max-w-full -z-10 " + styles.bannerImg5
-        }
-      >
+
+      <div className={styles.bannerImg5}>
         <Image src={bannerImg5} alt="bannerBgImg5" />
-      </div> */}
+      </div>
     </section>
   );
 };

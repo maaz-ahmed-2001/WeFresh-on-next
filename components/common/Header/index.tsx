@@ -24,13 +24,13 @@ const Header = (props: LinkProps) => {
         show
           ? {
               backgroundColor: "#68BAE3",
-              height: "100vh",
+              height: "500px",
               transition: "0.3s all",
             }
           : { backgroundColor: "transparent" }
       }
     >
-      <div className="container xs:px-2 sm:px-5 md:px-10 lg:px-20 xl:px-32 2xl:px-36 3xl:px-44">
+      <div className="container xs:px-4 sm:px-5 md:px-8 lg:px-14 xl:px-24 2xl:px-36 3xl:px-72">
         <nav
           className={
             "flex justify-between items-center w-full mx-auto relative " +
@@ -58,7 +58,7 @@ const Header = (props: LinkProps) => {
             </li>
           </ul>
           <button
-            className={"md:flex lg:hidden 3xl:hidden " + styles.headerBtn}
+            className={"md:flex hidden " + styles.headerBtn}
             onClick={handleClick}
           >
             <Image src={show ? close : menuBtn} alt="collapse-btn" />

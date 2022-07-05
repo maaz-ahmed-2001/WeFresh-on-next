@@ -4,7 +4,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: red;
 }
 .headerBtn img {
   width: 30px;

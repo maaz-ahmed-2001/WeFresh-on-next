@@ -22,17 +22,17 @@ const PartnersSection = () => {
     },
   };
   return (
-    <section className="py-24 md:pb-20">
-      <div className="container xs:px-2 sm:px-5 md:px-10 lg:px-20 xl:px-32 2xl:px-36 3xl:px-44 ">
-        <div className="grid grid-cols-2 md:grid-cols-1">
+    <section className="py-52 lg:pb-48 overflow-x-hidden">
+      <div className="container xs:px-4 sm:px-5 md:px-8 lg:px-14 xl:px-24 2xl:px-36 3xl:px-72 ">
+        <div className="grid grid-cols-2 lg:grid-cols-1">
           <div className={"relative " + styles.leftSide}>
-            <Image
-              src={pageContent.background_img.src}
-              alt={pageContent.background_img.alt}
-              className={"max-w-full " + styles.bgImg}
-            />
-
-            <div className={styles.content + " "}>
+            <div className={styles.bgImg}>
+              <Image
+                src={pageContent.background_img.src}
+                alt={pageContent.background_img.alt}
+              />
+            </div>
+            <div className={styles.content}>
               <SectionHeading
                 normal={pageContent.heading.normal}
                 bold={pageContent.heading.bold}
@@ -41,19 +41,19 @@ const PartnersSection = () => {
             </div>
           </div>
           <div className={"relative " + styles.partnerImgs}>
-            <div>
+            <div className={styles.partnerImg1}>
               <Image src={partnerImg1} alt="" />
             </div>
-            <div>
+            <div className={styles.partnerImg2}>
               <Image src={partnerImg2} alt="" />
             </div>
-            <div>
+            <div className={styles.partnerImg3}>
               <Image src={partnerImg3} alt="" />
             </div>
-            <div>
+            <div className={styles.partnerImg4}>
               <Image src={partnerImg4} alt="" />
             </div>
-            <div>
+            <div className={styles.partnerImg5}>
               <Image src={partnerImg5} alt="" />
             </div>
           </div>

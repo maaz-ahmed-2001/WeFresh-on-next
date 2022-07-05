@@ -18,7 +18,7 @@ const BusinessSection = () => {
     <section className={"pt-24 pb-20 md:pt-20 md:pb-24 "}>
       <div
         className={
-          "container xs:px-2 sm:px-5 md:px-10 lg:px-20 xl:px-32 2xl:px-36 3xl:px-44 "
+          "container xs:px-4 sm:px-5 md:px-8 lg:px-14 xl:px-24 2xl:px-36 3xl:px-72 "
         }
       >
         <div className="flex-col justify-center items-center">

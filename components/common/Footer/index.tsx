@@ -50,7 +50,7 @@ const Footer = () => {
     <footer className={styles.footer}>
       <div
         className={
-          "container xs:px-2 sm:px-5 md:px-10 lg:px-20 xl:px-32 2xl:px-36 3xl:px-44 pt-20 pb-10 md:pb-0"
+          "container xs:px-4 sm:px-5 md:px-8 lg:px-14 xl:px-24 2xl:px-36 3xl:px-72 pt-20 pb-10 md:pb-0"
         }
       >
         <div className="grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-5 3xl:grid-cols-5 gap-4">

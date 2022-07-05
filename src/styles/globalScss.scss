@@ -11,11 +11,3 @@ $border: 1px solid $border-primary;
 $text-size: 16px;
 $bg-primary: #f2f9ff;
 $bold: 600;
-
-@use "../../containers/home/Banner/index.module.scss";
-@use "../../components/common/InlineForm/index.module.scss";
-@use "../../components/common/Footer/index.module.scss";
-@use "../../components/common/FooterLinks/index.module.scss";
-@use "../../components/common/Header/index.module.scss";
-@use "../../components/common/DownloadApp/index.module.scss";
-@use "../../containers/home/Business/index.module.scss";

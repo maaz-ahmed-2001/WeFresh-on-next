@@ -17,6 +17,7 @@
   margin-bottom: 40px;
   margin-top: 4px;
   text-align: center;
+  color: var(--text-primary);
 }
 .content > div {
   justify-content: center;
